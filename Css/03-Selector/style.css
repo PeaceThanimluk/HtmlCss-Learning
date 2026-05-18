@@ -1,0 +1,19 @@
+/*ELement Selector*/
+p{
+    color: red;
+}
+
+/*Class Selector*/
+.kuy{
+    color: lime;
+}
+
+/*Id Selector*/
+#myButton{
+    size: 10px;
+    background-color: black;
+}
+
+#myButton:hover{
+    cursor: pointer;
+}
