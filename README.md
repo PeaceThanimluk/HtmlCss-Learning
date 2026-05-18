@@ -77,4 +77,4 @@ id href คือ attribute ที่อยู่ด้านในtag
 <!-------SOURCE--------->
 # Source
 - [MillerDev](https://youtu.be/leihudXxqAY?si=QmHkgWLw3kRP5_lf)
-- [W3School](https://www.w3schools.com/js/default.asp)
+- [W3School](https://www.w3schools.com/html/default.asp)
