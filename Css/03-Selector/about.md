@@ -4,6 +4,7 @@
 ## Element Selector
 คือเลือกส่วนของ element มา เช่น
 ทุกตัวที่เป็น elementนั้น จะมีการเปลี่ยนแปลงเหมือนกันหมด
+
 **HTML**
 ```html
 <p>Hello</p>
