@@ -1,0 +1,126 @@
+<!--Form จะใช้สำหรับรวบรวมข้อมูลการป้อนข้อมูลของผู้ใช้และจะถูกส่งไปserverเพื่อประมวลผล-->
+<!--
+Form ประกอบไปด้วย Label Input
+
+1.Labelหน้าที่คือเอาไว้แปะป้ายบอกผู้ใช้งานว่า ช่องกรอกข้อมูล(input) ช่องนี้มีไว้ทำอะไร
+
+2.Input คือช่องให้กรอกข้อมูล self closing tag
+
+3.Select คือ ตัวเลือกหลายทาง
+-->
+
+
+<form action="" method="">
+
+    <!--Label&Input-->
+    <label for="firstName">First Name : </label>
+    <input type="text" name="fistName" placeholder="Enter your First Name"> <br>
+    <label for="lastName">Last Name : </label>
+    <input type="text" name="lastName" placeholder="Enter your Last Name"> <br>
+
+    <!--Select-->
+    <select name="cars" id="cars">
+        <option value="Volvo">Volvo</option>
+        <option value="BMW">BMW</option>
+        <option value="Benz">Benz</option>
+    </select> <br>
+
+    <!--Text Area-->
+    <textarea name="" id=""></textarea> <br>
+
+    <!--Button-->
+    <button type="submit">Submit</button>
+
+</form>
+
+<!--Form-->
+<!--
+action คือ ปลายทางว่าจะส่งข้อมูลไปให้ไฟล์ไหนประมวลผล
+method คือ วิธีการส่งข้อมูล
+-Get : ส่งข้อมูลแบบเปิดเผย โดยข้อมูลจะแสดงไปกับURL (เหมาะกับช่องค้นหา)
+-Post : ส่งข้อมูลแบบซ่อนหลังบ้าน ปลอดภัย(เหมาะกับข้อมูลส่วนตัว password, subscribetion)
+-->
+
+<!--Label-->
+<!--
+for คือการบอกว่าlabelนี้ไว้ใช้กับidไหน โดยจะตั้งให้ตรงกับชื่อId
+-->
+
+<!--input-->
+<!--
+1.name (สำคัญที่สุด) คือ ชื่อตัวแปรที่ระบบหลังบ้านจะเอาไปใช้ เช้น
+ถ้าตั้ง name = "age" เวลาส่งไปหลังบ้ายจะขึ้นว่า age = 25 ถ้าไม่ใส่ ข้อมูลจะไม่ถูกส่งไปไหน
+2.type คือ ประเภทการรับข้อมูล
+3.value คือ ค่าที่อยู่ในช่องนั้น ถ้าเราใส่ไว้ล่วงหน้า มันจะกลายเป็นค่าเริ่มต้นที่โผล่ขึ้นมาตั้งแต่เปิด
+4.required เป็นคำสั่งสั้นๆที่เอาไว้แปะท้าย เพื่อบอกว่า "ช่องตรงนี้บังคับกรอก" ถ้าผู้ใช้ไม่กรอกแล้ว
+เผลอไปกดส้ง จะเด้งเตือนและไม่ยอมให้ส่งข้อมูล
+-->
+
+<!--ตัวอย่างinputเพิมเติม-->
+
+<br>
+
+<input type="text" name="userName" id="userName" value="None" placeholder="Enter Your Name" required>
+
+<!--Select Option-->
+<!--
+หน้าตาของมันจะขึ้นอยู่กับ Os จึงไม่สามารถตกแต่งได้มาก จึงต้องใช้วิธีอื่นแทน
+-->
+
+<br>
+<hr>
+<br>
+
+<!--fieldSet&Legend-->
+<h1>FieldSet</h1>
+<fieldset>
+    <legend>Personal Info</legend>
+    <label for="firstName">First Name : </label>
+    <input type="text" name="fistName" placeholder="Enter your First Name"> <br>
+    <label for="lastName">Last Name : </label>
+    <input type="text" name="lastName" placeholder="Enter your Last Name"> <br>   
+</fieldset>
+
+<br>
+<hr>
+<br>
+
+<!--DataList-->
+<h1>DataList</h1>
+
+<form action="">
+    <label for="myBrowser">Input</label>
+    <input type="text" id="myBrowser" list="browsers">
+
+    <Datalist id="browsers"> <!--idต้องตรงกับlistของinput-->
+        <option value="Google">GOOGLE</option>
+        <option value="Chrome">CHROME</option>
+        <option value="Safari">SAFARI</option>
+    </Datalist>
+
+</form>
+
+<!--
+Data List
+
+-ผู้ใช้พิมพ์ค้นหาได้รวดเร็ว: สมมติว่ามีตัวเลือกเป็น "จังหวัดในประเทศไทย" 77 จังหวัด ถ้าใช้ <select> ผู้ใช้ต้องใช้นิ้วเลื่อนหาจนเมื่อยมือ
+-ไม่บล็อกใจผู้ใช้: ถ้ารายการที่เราเตรียมไว้ไม่มีสิ่งที่ผู้ใช้ต้องการ (เช่น ในลิสต์ไม่มีจังหวัดที่เขาอยู่) เขาก็ยังสามารถ พิมพ์คำอื่นนอกเหนือจากที่เรากำหนด ลงไปในช่องได้เลย
+
+-->
+
+
+
+<!--Selected Vs DataList-->
+<!--
+Selected
+-พิมพิ์อย้างอื่นไม่ได้ บังคับเลือก
+-พิมพิ์ค้นหาไม่ได้
+-ตกแต้งยาก
+
+DataList
+-พิมพ์อย่างอืนได้ ไม่บังคับเลือก
+-มีตัวช่วยในการค้นหาได้เร็วขึ้น
+-ตกแต่งในcss ได้
+
+-->
+
