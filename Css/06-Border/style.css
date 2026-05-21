@@ -1,0 +1,61 @@
+.dotted {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: greenyellow;
+}
+
+.dashed {
+    border-width: 5px 2px 10px 2px;
+    /*บน ขวา ล่าง ซ้าย*/
+    border-style: dashed;
+}
+
+.solid {
+    border-style: solid;
+    border-width: 10px;
+    border-color: lime;
+    border-radius: 20px;
+}
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.ridge {
+    border-style: ridge;
+}
+
+.inset {
+    border-style: inset;
+}
+
+.outset {
+    border-style: outset;
+}
+
+.none {
+    border-style: none;
+}
+
+.hidden {
+    border-style: hidden;
+}
+
+.mix {
+    border-style: dotted dashed solid double;
+    /*บน ขวา ล่าง ซ้าย*/
+}
+
+ 
+.shot {
+    border: 5px dashed red;
+    /*
+    1. border-width
+    2. border-style
+    3. border-color
+    */
+}

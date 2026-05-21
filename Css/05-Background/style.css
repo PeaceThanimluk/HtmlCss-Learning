@@ -1,0 +1,18 @@
+body{
+    background-color: lightblue;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5kA57dhZkk65di7Es1wpk2Kq0Vp07osxLw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+
+    /* background: red url() no-repeat center; */
+}
+
+.myBox {
+    width: 500px;
+    height: 200px;
+    background-image: url(/Html/2-Basic/Image/cat.jpg);
+    background-size: cover; /*ปรับขนาดรุปให้พอดีกับDiv*/
+
+}

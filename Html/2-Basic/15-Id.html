@@ -1,0 +1,34 @@
+<!--Id-->
+<!--
+-Idคือ Attribute ของ html ที่เราสามารถใช้ระบุชื่อ id ให้กับแท็ก Html ได้
+-Id จะถูกใช้เพื่ออ้างอิงไปที่ไฟล์ Cssได้และสามารถใช้กับ JavaScript เพื่อเข้าถึง Element html
+-Id ต้องมีแค่ตัวเดียว
+-Id ไม่สามารถใช้ซ้ำได้
+-->
+
+<style>
+    #myBox{
+        background-color: lime;
+    }
+</style>
+
+<div id="myBox">
+
+</div>
+
+<!-- <script>
+    const name = document.getElementById("myBox");
+</script> -->
+
+
+<!--
+1.ให้JavaScriptเข้าถึง
+2.ใช้ทำAnchor Link 
+-->
+
+<a href="#contact-section">Contact-Info</a> <!--ชื่อตรงกับId-->
+
+<div id="contact-section">
+    <h2>Contact Info</h2>
+    <p>Call : 502222</p>
+</div>
