@@ -1,0 +1,38 @@
+/*
+Padding ระยะห่างด้านในของ element ใช้เพื่อเว้นช่องว่างระหว่าง เนื้อหา (content) กับ ขอบ (border) ของ element
+
+ใช้ตอนไหน
+1.ทำให้ปุ่มกดง่ายขึ้น ทำให้ปุ่มมไม่ชิดกับข้อความ
+2.เว้นระยะข้อความในกล่อง
+3.จัดlayoutให้ดูสบายตา
+
+*/
+
+div {
+    width: 500px;
+    height: 400px;
+    background-color: lime;
+    margin: 30px 40px;
+}
+
+.padding {
+    padding: 50px;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
+.padding-left {
+    padding-left: 50px;
+}
+
+.padding-right {
+    padding-right: 50px;
+}
+
+/*Shot Hand เหมือนกับ margin เลย*/

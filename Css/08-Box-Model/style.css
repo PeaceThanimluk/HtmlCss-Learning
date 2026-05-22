@@ -1,0 +1,8 @@
+div {
+    width: 50%;
+    height: 150px;
+    background-color: red;
+    padding: 100px;
+    border: 10px solid black;
+    margin: 50px;
+}

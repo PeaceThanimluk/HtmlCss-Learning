@@ -1,0 +1,88 @@
+/*
+Css Margin คือ พื้นที่ว่างที่อยู่ รอบนอกเส้นขอบ(Border)ของกล่องวัตถุ
+มีหน้าที่สร้างระยะห่างระหว่างวัตถุชิ้นนั้น กับวัตถุชิ้นอื่นๆที่อยู่รอบข้าง
+*/
+
+.allSide {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin: 20px;
+}
+
+.marginTop {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin-top: 50px;
+}
+
+.marginLeft {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin-left: 50px;
+}
+
+.marginRight {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin-right: 50px;
+}
+
+.marginBottom {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin-bottom: 50px;
+
+}
+
+.shotHand1 {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin: 40px 60px; /*บนล่าง ซ้ายขวา*/
+}
+
+.shotHand2 {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin: 100px 50px 20px; /*บน ซ้ายขวา ล่าง*/
+}
+
+.shotHand3 {
+    width: 50%;
+    height: 150px;
+    background-color: lime;
+    margin: 100px 20px 50px 100px; /*บน ขวา ล่าง ซ้าย*/
+}
+
+/*Margin Auto*/
+
+/*
+คือเทคนิคที่ใช้สำหรับ จัดกล่องวัตถุให้อยู่กึ่งกลางหน้าจอ(ในแนวนอน)
+1.ต้องกำหนดความกว้าง(width หรือ max-width)ให้กล่องเสมอ เพราะ้ถ้าไม่กำหนด
+กล่องในระบบ จะขยายเต็ฒ100%ของหน้าจอโดยธรรมชาติ
+
+ตัวอย่างที่ใช้บอ่ย
+
+1.จัด layout หน้าเว็บให้อยู่ตรงกลาง
+2.จัดปุ่ม หรือ การ์ดเนื้อหาให้อยู่ตรงกลางหน้า
+
+สิ่งที่ margin auto ทำไม่ได้
+1.จัดกึ่งกลางแนวตั้งไม่ได้
+2.จัดตัวหนังสือให้อยู่ตรงกลางไม่ได้ ต้องใช้ textalign center แทยน
+*/
+
+.marginAuto {
+    width: 1200px;
+    height: 400px;
+    background-color: lime;
+    margin: 0 auto;
+}
+
+/* 0 คือ บนและล่าง ให้มีmargin = 0 */
+/* auto หมายถึง ซ้ายและขวา ให้บราวเซอร์คำนวนและแบ่งพื้นที่ว่างให้เหลือเท่ากันเองโดยอัตโนมัติ*/
