@@ -1,0 +1,204 @@
+div {
+    background-color: bisque;
+    padding: 50px;
+    height: auto;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 4em;
+}
+
+.box1 {
+    background-color: lime;
+}
+
+.box2 {
+    background-color: chocolate;
+}
+
+.box3{
+    background-color: aqua;
+}
+
+.box4 {
+    background-color: darkgoldenrod;
+}
+
+.headerText {
+    text-align: center;
+    background-color: rgb(250, 152, 33);
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.tip {
+    padding: 0 0;
+    text-align: center;
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: red;
+}
+
+/*------Flex Direction---------*/
+.flex-Row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-rowReverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-Columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-columnsReverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*------Justify-Content-------*/
+
+.just-flexStart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.just-flexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.just-flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.just-flexSpaceBetween {
+    display: flex;
+    justify-content: space-between; /*กล่องชิดขอบ*/
+}
+
+.just-flexSpaceAround {
+    display: flex;
+    justify-content: space-around; /*ตรงขอบกว้างกว่าตรงกลางครึ่งนึง*/
+}
+
+.just-flexSpaceEvenly {
+    display: flex;
+    justify-content: space-evenly; /*ช่องว่างทุกช่องเท่ากัน*/
+}
+
+.align-flexStart {
+    display: flex;
+    align-items: flex-start;
+    height: 500px;
+}
+
+.align-flexEnd{
+    display: flex;
+    align-items: flex-end;
+    height: 500px;
+}
+
+.align-flexCenter{
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.align-flexBaseLine{
+    display: flex;
+    align-items: baseline;
+    height: 500px;
+}
+
+/*--------Flex Wrap--------------*/
+
+.wrap-noWrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.wrap-Wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--------Align Content*/
+.alContent-flexStart {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.alContent-flexEnd {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.alContent-flexCenter {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.alContent-flexSpaceBetween {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.alContent-flexSpaceAround {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.alContent-flexSpaceEvenly {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.gap1 {
+    display: flex;
+    flex-direction: row;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+/*--------Align Self-----------*/
+
+.self-Center {
+    display: flex;
+    height: 500px;
+}
+
+#Self1 {
+    align-self: center;
+}
+
+/*-------------Order-----------*/
+
+.order1{
+    display: flex;
+}
+
+#order1 {
+    order: 1;
+}

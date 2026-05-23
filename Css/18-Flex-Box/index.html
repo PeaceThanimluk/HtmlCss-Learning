@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Flex-Direction-->
+    <h1 class="headerText">Flex Direction</h1>
+    
+    <h1>Row</h1>
+    <div class="flex-Row">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <hr>
+
+    <h1>Row-Reverse</h1>
+    <div class="flex-rowReverse">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <hr>
+
+    <h1>columns</h1>
+    <div class="flex-Columns">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+    
+    <hr>
+
+    <h1>Columns-Reverse</h1>
+    <div class="flex-columnsReverse">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <hr>
+
+    <!--Justify-Content-->
+    <h1 class="headerText">Justify Content(main axis , x axis)</h1>
+    
+    <h1>start</h1>
+    <div class="just-flexStart">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <h1>end</h1>
+    <div class="just-flexEnd">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>center</h1>
+    <div class="just-flexCenter">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>space between</h1>
+    <div class="just-flexSpaceBetween">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>space around</h1>
+    <div class="just-flexSpaceAround">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>space evenly</h1>
+    <div class="just-flexSpaceEvenly">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <!--ALign Item-->
+    <h1 class="headerText">align-item(cross-axis , y-axis )</h1>
+    
+    <h1>Align Start</h1>
+    <div class="align-flexStart">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>Align End</h1>
+    <div class="align-flexEnd">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>Align Center</h1>
+    <div class="align-flexCenter">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+
+    <h1>Align Baseline</h1>
+    <div class="align-flexBaseLine">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div> 
+    
+    <!--Flex Wrap-->
+    <h1 class="headerText">Flex Wrap(Responsive)</h1>
+
+    <h1>No-Wrap</h1>
+    <div class="wrap-noWrap">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>    
+
+    <h1>Wrap</h1>
+    <div class="wrap-Wrap">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>     
+
+    <!--Align Content-->
+    <h1 class="headerText">Align Content</h1>
+    <div class="tip">
+        <h2>Tip</h2>
+        <p>Align Item = คุมกล่องลูกรายบุคคล(ใช้ได้ตั้งแต่มีแค่1แถวขึ้นไป)</p>
+        <p>Align Content =  จัดตำแหน่งและระยะห่างของหลายแถว(จะทำงานก็ต่อเมื่อมีกล่องลูกล้นจนตกบรรทัดใหม่) กลายเป็น2แถวขึ้นไป<span>เท่านั้น!</span></p>
+        <mark>การจะใช้ align contentได้ ต้องมี flex-wrap: wrap; ด้วย</mark>
+        <h2><mark style="background-color: crimson; color: white;">นานๆใช้ที</mark></h2>
+    </div>
+
+    <h1>flex-start</h1>
+    <div class="alContent-flexStart">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="alContent-flexEnd">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <h1>center</h1>
+    <div class="alContent-flexCenter">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <h1>space-between</h1>
+    <div class="alContent-flexSpaceBetween">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <h1>space-around</h1>
+    <div class="alContent-flexSpaceAround">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <h1>space-evenly</h1>
+    <div class="alContent-flexSpaceEvenly">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>      
+
+    <!--Gap-->
+    <h1 class="headerText">Gap</h1>
+
+    <h1>column-gap: 2em , row-gap: 2em</h1>
+    <div class="gap1">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+
+    <!--Align Self-->
+    <h1 class="headerText">Align Self</h1>
+    <div class="tip">
+        <h2>Tip</h2>
+        <p>
+            Align-self = สั่งจัดตำแหน่งเฉพาะ <span><mark>Item ตัวเดียว โดยไม่กระทบ Item อื่น</mark></span>
+        </p>
+    </div>
+
+    <h1>Self Center</h1>
+    <div class="self-Center">
+        <div class="box1" id="Self1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>   
+
+    <!--Order-->
+    <h1 class="headerText">Order</h1>
+    <div class="tip">
+        <h2>Tip</h2>
+        <p>
+            order คือ Property ของ Flexbox ที่ใช้ เปลี่ยนลำดับการแสดงผลของ Flex Item โดยไม่ต้องแก้ HTML
+        </p>
+
+        <mark>ค่าน้อยจะแสดงก่อน ค่ามากจะแสดงทีหลัง</mark>
+    </div>
+
+    <h1>Order1</h1>
+    <div class="order1">
+        <div class="box1" id="order1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>    
+
+</body>
+</html>

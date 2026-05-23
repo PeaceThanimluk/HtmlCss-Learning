@@ -1,0 +1,81 @@
+
+div {
+    width: 500px;
+    height: 300px;
+    background-color: burlywood;
+    color: black;
+    margin: 0 auto;
+}
+
+div h1{
+    color: white;
+}
+
+/*******Text Align *********/
+
+.textCenter {
+  text-align: center; /*ปรับข้อความให้อยู่ตรงกลาง*/
+}
+
+.textJustify {
+    text-align: justify; /*จัดตัวอักษรให้ชิดขอบซ้ายและขอบขวาพร้อมกัน*/
+}
+
+/*******Text Decoration *********/
+
+.line-Through {
+    text-decoration: line-through;
+}
+
+.line-Overline {
+    text-decoration: overline;
+}
+
+.line-Overline-Underline {
+    text-decoration: overline underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 10px;
+    text-decoration-style: dashed;
+}
+
+.decoration-Shothand {
+    text-decoration: underline lime double 5px;
+}
+
+
+/******* Text-Transfrom *********/
+
+.transfrom-Uppercase {
+    text-transform: uppercase;
+}
+
+.transfrom-Capitalize {
+    text-transform: capitalize; /*ทำให้ตัวอักษรตัวแรกของคำเป็นพิมพ์ใหย่*/
+}
+
+
+.transfrom-Indent {
+    text-indent: 50px;
+}
+
+.letter-Spacing {
+    letter-spacing: 10px;
+}
+
+.line-Height {
+    line-height: 3;
+}
+
+.word-Spacing {
+    word-spacing: 10px;
+}
+
+.white-space-Nowrap {
+    white-space: nowrap;
+}
+
+.text-Shadow {
+    text-shadow: 2px 2px 5px black; /* x-axis , y-axis , blur , color */
+
+
+}

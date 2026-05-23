@@ -1,0 +1,28 @@
+p {
+    display: inline; /*เปลี่ยนจาก block element เป็น Inline Element*/
+    outline: 1px solid red;
+}
+
+span {
+    display: block;
+    outline:  1px solid red;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/*display:none; มองไม่เห็นสัมผัสไม่ได้*/
+.none {
+    display: none;
+}
+
+/*visibility: hidden;*/ /*มองไม่เห็นแต่ยังสัมผัสได้*/
+.visible {
+    visibility: hidden;
+}
+
+
+

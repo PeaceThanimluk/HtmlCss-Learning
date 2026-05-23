@@ -1,0 +1,73 @@
+/*position คือ CSS Property ที่ใช้กำหนดว่า Element จะถูกวางตำแหน่งบนหน้าเว็บอย่างไร*/
+
+.container {
+    max-width: 960px;
+    height: 5000px;
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+.container div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.static {
+    margin-top: 20px;
+    position: static;
+}
+
+.relative {
+    position: relative;
+    left: 100px; /*ขยับจากตำแหน่งเดิมของตัวเอง100px*/
+}
+/*
+ใช้เมื่อ
+1.ขยับelement จากเดิมเล็กน้อย
+2.สร้างจุดอ้างอิงให้absolute
+*/
+
+
+.fixed {
+    position: fixed; /*ยึดอยู่กับหน้าจอ*/
+    left: 20px;
+}
+
+/*
+ใช้กับ:
+-Navbar
+-ปุ่ม Chat
+-ปุ่ม Back to Top
+*/
+
+.absolute {
+    /*ใช้ร่วมกับ relative ใส่กับ child element ส่วน parent element ใส่relative*/
+    /*ตำแหน่งจะมีความสัมพันธ์กับrelative(parent element)*/
+    /*ตำแหน่งอยู่แค่ภายใน parent element*/
+    position: absolute;
+    right: 10px;
+}
+
+.sticky { /*ติดเมื่อเลื่อนลง เมื่อถึงตำแหน่งบนสุดของจอจะเลื่อนลง*/
+    position: sticky;
+    top: 0;
+}
+
+/*
+ใช้บ่อยกับ
+
+Table Header
+Sidebar
+เมนูเว็บ
+
+*/
+
+
+
+
+
