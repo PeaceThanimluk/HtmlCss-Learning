@@ -1,0 +1,14 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+/*-----------Pseudo-Class---------------*/
+
+a:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+

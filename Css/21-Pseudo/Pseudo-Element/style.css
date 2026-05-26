@@ -1,0 +1,11 @@
+.container {
+    background-color: yellow;
+    position: relative;
+}
+
+/*-----------Pseudo-Element--------------*/
+
+p::first-line {
+    color: red;
+    font-size: bold;
+}

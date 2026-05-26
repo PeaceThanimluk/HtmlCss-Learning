@@ -1,0 +1,29 @@
+.container {
+    max-width: 960x;
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+}
+
+.headerText {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#hidden {
+    overflow: hidden;
+}
+
+#scroll {
+    overflow: scroll;
+}
+
+#auto {
+    overflow: auto;
+}

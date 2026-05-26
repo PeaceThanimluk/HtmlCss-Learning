@@ -1,0 +1,19 @@
+.container {
+    margin: 0 auto;
+    background-color: yellow;
+    position: relative;
+    width: 500px;
+    height: 500px;
+
+    .box1 {
+        width: 200px;
+        height: 99px;
+        background-color: antiquewhite;
+    }
+
+    .box2 {
+        height: 99px;
+        width: 99px;
+        background-color: black;
+    }
+}

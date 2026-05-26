@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: rgba(143, 111, 6, 0.942);
+}
+
+.Before-After > h1 {
+    background-color: rgb(45, 110, 229);
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.364);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.704);
+}
+
+.Before h2, .After h2 {
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.704);
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    position: relative;
+    left: 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.box {
+    margin: auto 10px;
+    height: auto;
+    padding: 10px;
+    
+    background-color: white;
+    border-radius: 10px;
+}
+
+.emoji-before::before {
+    content: "😊";
+    display: inline-block;
+    transform: scale(1, 4);
+    margin-right: 20px;
+}
+
+.emoji-after::after {
+    content: "😊";
+    display: inline-block;
+    position: relative;
+    transform: scale(10, 5);
+    left: 30%;
+    
+
+}

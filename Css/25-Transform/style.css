@@ -1,0 +1,93 @@
+.headerText {
+    background-color: bisque;
+    text-align: center;
+    margin: 50px;
+}
+
+.SectionText {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: chocolate;
+    padding: 4px 8px;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.box {
+    margin: 50px auto;
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: hsl(144, 60%, 49%);
+}
+
+/*----------------Translate------------------*/
+
+#transX {
+    transform: translateX(200px);
+}
+
+#transY {
+    transform: translateY(50px);
+}
+
+
+#transZ {
+    transform: translateZ(50px);
+}
+
+#trans {
+    transform: translate(50%, 50%);
+}
+
+/*---------------Rotate------------------*/
+
+#rotateX {
+    transform: rotateX(180deg);
+}
+
+#rotateY {
+    transform: rotateY(180deg);
+}
+
+#rotateZ {
+    transform: rotateZ(45deg);
+}
+
+
+/*----------------Scale------------*/
+
+#scaleX {
+    transform: scaleX(2);
+}
+
+#scaleY {
+    transform: scaleY(2);
+}
+
+#scale {
+    transform: scale(0.1, 1);
+}
+
+/*--------------Skew-----------*/
+
+#skewX {
+    transform: skewX(10deg);
+}
+
+#skewY {
+    transform: skewY(10deg);
+}
+
+#skew {
+    transform: skew(10deg, 10deg);
+}
+
+/*---------------Mix-------------------*/
+
+#mix {
+    transform: translate(100px, 100px) rotate(45deg) scale(1.5, 1.5);
+}

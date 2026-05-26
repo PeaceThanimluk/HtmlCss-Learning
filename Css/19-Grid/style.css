@@ -1,0 +1,41 @@
+
+.box {
+    text-align: center;
+    padding: 10px;
+    background-color: brown;
+    border: 2px solid black;
+    color: white;
+    width: 100px;
+    
+}
+
+.headerText {
+    text-align: center;
+    background-color: rgb(250, 152, 33);
+    border: 2px solid black;
+    font-weight: bold;    
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-Template-Columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-Template-Row {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+}
+
+/*-------------MinMaxFunction------------*/
+
+.grid-minMax {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100px 100px minmax(100px, auto);
+    grid-template-rows: minmax(200px, auto) 100px 200px;
+}

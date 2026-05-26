@@ -1,0 +1,36 @@
+:root {
+    --black: #000;
+    --background: rgb(127, 237, 189);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
