@@ -1,0 +1,212 @@
+.sectionText {
+    background-color: bisque;
+    text-align: center;
+}
+
+.box {
+    margin: 100px auto;
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 66%, 55%);
+    font-size: 13em;
+    text-align: center;
+}
+
+/*--------------Slide------------*/
+#sideLeft {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+}
+
+@keyframes slideLeft {
+    from{transform: translateX(100%);}
+}
+
+#sideRight {
+    animation-name: slideRight;
+    animation-duration: 1s;
+}
+
+@keyframes slideRight {
+    to{transform: translateX(100%);}
+}
+
+#sideUp {
+    animation-name: slideUp;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    from{transform: translateY(100%);}
+}
+
+#sideDown {
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+@keyframes slideDown {
+    to{transform: translateY(100%);}
+}
+
+/*-----------Rotate-------------*/
+
+#rotateX {
+    animation-name: rotateX;
+    animation-duration: 2s;
+}
+
+@keyframes rotateX {
+    100%{transform: rotateX(90deg);}
+}
+
+#rotateY {
+    animation-name: rotateY;
+    animation-duration: 2s;
+
+}
+
+@keyframes rotateY {
+    100%{transform: rotateY(90deg);}
+}
+
+#rotateZ {
+    animation-name: rotateZ;
+    animation-duration: 2s;
+}
+
+@keyframes rotateZ {
+    50%{transform: rotateZ(45deg);}
+}
+
+/*
+% คือช่วงเวลา(keyframes)
+0% = ตอนเริ่มanimation
+25%
+50% = ครึ่งทางของanimation
+100% = ตอนจบ animation
+
+*/
+
+
+/*---------Percent------------*/
+
+#per0 {
+    animation-name: per0;
+    animation-duration: 2s;
+}
+
+@keyframes per0 {
+    0%{transform: rotateZ(90deg);}
+}
+
+#per25 {
+    animation-name: per25;
+    animation-duration: 2s;
+}
+
+@keyframes per25 {
+    25%{transform: rotateZ(90deg);}
+}
+
+#per50 {
+    animation-name: per50;
+    animation-duration: 2s;
+}
+
+@keyframes per50 {
+    50%{transform: rotateZ(90deg);}
+}
+
+#per100 {
+    animation-name: per100;
+    animation-duration: 2s;
+}
+
+@keyframes per100 {
+    100%{transform: rotateZ(90deg);}
+}
+
+/*----------Scale------------*/
+
+#scale-Grow {
+    animation-name: scale-Grow;
+    animation-duration: 2s;
+}
+
+@keyframes scale-Grow {
+    50%{transform: scale(2, 2);}
+}
+
+#scale-Shrink {
+    animation-name: scale-Shrink;
+    animation-duration: 2s;
+}
+
+@keyframes scale-Shrink {
+    50% {transform: scale(0.5, 0.5);}
+}
+
+#scale-Fade {
+    animation-name: scale-Fade;
+    animation-duration: 2s;
+}
+
+@keyframes scale-Fade {
+    50% {opacity: 0;}
+}
+
+/*------------Color-Change----------*/
+
+#color-Change {
+    animation-name: color-Change;
+    animation-duration: 3s;
+}
+
+@keyframes color-Change {
+    0%{background-color: hsl(0, 88%, 45%);}
+    25%{background-color: hsl(34, 100%, 50%);}
+    50%{background-color: rgb(255, 234, 8);}
+    75%{background-color: rgb(149, 255, 0);}
+    100%{background-color: rgba(38, 255, 132, 0.862);}
+}
+
+/*--------------Box-Shadow--------------*/
+
+#boxShadow-Glow {
+    animation-name: shadow-glow;
+    animation-duration: 2s;
+}
+
+@keyframes shadow-glow {
+    50%{box-shadow: 10px 10px 50px red;}
+}
+
+/*-------------Hover-----------*/
+#Hover:hover {
+    animation-name: shadow-glow;
+    animation-duration: 2s;
+}
+
+
+/*---------------Active------------*/
+
+#active:active {
+    animation-name: shadow-glow;
+    animation-duration: 2s;
+}
+
+
+/*---------------Animation-------------*/
+
+#animation {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /*จำนวนรอบในการเล่น animation*/
+    animation-direction: alternate; /*ทิศทาง(alternate ไป-กลับ)*/
+    animation-play-state: running; /*Useful for JavaScript*/
+    animation-timing-function: cubic-bezier(0.86, 0.08, 0.13, 1.08); /*CUstom*/
+    /* animation-timing-function: ease-in-out; */
+}
+
+
